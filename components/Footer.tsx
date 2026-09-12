@@ -38,7 +38,7 @@ const quickLinks = {
   en: [
     { label: "About Us", href: "#about" },
     { label: "Youth Hub", href: "#youth" },
-    { label: "EWS Portal", href: "#ews" },
+    { label: "Advocacy & Meetings", href: "#meetings" },
     { label: "Events & Programs", href: "#events" },
     { label: "Member Directory", href: "#events" },
     { label: "Contact Us", href: "#contact" },
@@ -46,7 +46,7 @@ const quickLinks = {
   hi: [
     { label: "हमारे बारे में", href: "#about" },
     { label: "युवा केंद्र", href: "#youth" },
-    { label: "EWS पोर्टल", href: "#ews" },
+    { label: "वकालत और बैठकें", href: "#meetings" },
     { label: "कार्यक्रम और आयोजन", href: "#events" },
     { label: "सदस्य निर्देशिका", href: "#events" },
     { label: "संपर्क करें", href: "#contact" },
@@ -235,8 +235,8 @@ export default function Footer({ lang }: FooterProps) {
         {/* Legal Disclaimer */}
         <p className="font-inter text-white/20 text-xs text-center mt-4 leading-relaxed max-w-3xl mx-auto">
           {lang === "en"
-            ? "This website is for informational purposes only. Swarn Samaj does not charge any fees for EWS guidance or certificate assistance. Beware of fraud."
-            : "यह वेबसाइट केवल सूचना उद्देश्यों के लिए है। EWS मार्गदर्शन या प्रमाणपत्र सहायता के लिए स्वर्ण समाज कोई शुल्क नहीं लेता। धोखाधड़ी से सावधान रहें।"}
+            ? "This website is for informational purposes only. Swarn Samaj is dedicated to uniting the community and fighting for our rights. Join our meetings to learn more."
+            : "यह वेबसाइट केवल सूचना उद्देश्यों के लिए है। स्वर्ण समाज समुदाय को एकजुट करने और हमारे अधिकारों के लिए लड़ने के लिए समर्पित है। अधिक जानने के लिए हमारी बैठकों में शामिल हों।"}
         </p>
       </div>
     </footer>

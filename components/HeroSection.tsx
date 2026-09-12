@@ -11,19 +11,19 @@ interface HeroSectionProps {
 const content = {
   en: {
     headline: "Strength in Unity,",
-    headline2: "Progress through Service",
+    headline2: "Responsibility for Our People",
     subtitle:
-      "Honoring heritage, empowering youth, and building an inclusive community for generations to come.",
-    cta1: "Become a Member",
+      "Uniting the Swarna Samaj to take charge of our future and organize meetings against oppressive government policies like unfair UGC regulations and the reservation system.",
+    cta1: "Join the Movement",
     cta2: "Explore Initiatives",
     scroll: "Scroll to discover",
   },
   hi: {
     headline: "संगठन में शक्ति,",
-    headline2: "सेवा से प्रगति",
+    headline2: "अपनों की जिम्मेदारी",
     subtitle:
-      "विरासत का सम्मान करते हुए, युवाओं को सशक्त बनाते हुए, और आने वाली पीढ़ियों के लिए एक समावेशी समुदाय का निर्माण करते हुए।",
-    cta1: "सदस्य बनें",
+      "अपने भविष्य की जिम्मेदारी लेने और अनुचित यूजीसी नियमों व आरक्षण प्रणाली जैसी दमनकारी सरकारी नीतियों के खिलाफ बैठकें आयोजित करने के लिए सवर्ण समाज को एकजुट करना।",
+    cta1: "आंदोलन से जुड़ें",
     cta2: "पहलों की खोज करें",
     scroll: "स्क्रॉल करें",
   },
@@ -150,7 +150,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
         <div className="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mx-auto">
           {[
             { num: "5000+", label: lang === "en" ? "Members" : "सदस्य" },
-            { num: "1200+", label: lang === "en" ? "EWS Aided" : "EWS सहायता" },
+            { num: "50+", label: lang === "en" ? "Meetings Launched" : "बैठकें आयोजित" },
             { num: "75+", label: lang === "en" ? "Years of Service" : "सेवा वर्ष" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

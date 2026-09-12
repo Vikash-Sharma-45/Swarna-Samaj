@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Landmark, BookOpen, Heart } from "lucide-react";
+import { Landmark, BookOpen, Shield } from "lucide-react";
 
 interface PillarsSectionProps {
   lang: "en" | "hi";
@@ -28,11 +28,11 @@ const pillars = {
       iconBg: "bg-navy/10",
     },
     {
-      icon: Heart,
-      title: "Social Welfare",
-      subtitle: "EWS support & community uplifting",
+      icon: Shield,
+      title: "Rights & Advocacy",
+      subtitle: "Standing against oppressive policies",
       description:
-        "Providing financial aid, legal assistance, healthcare guidance, and EWS certification support to uplift economically weaker sections within our community.",
+        "Organizing meetings and campaigns to raise awareness and fight against oppressive government policies like unfair UGC regulations and the reservation system.",
       color: "from-gold/5 to-navy/5",
       iconBg: "bg-gold/10",
     },
@@ -57,11 +57,11 @@ const pillars = {
       iconBg: "bg-navy/10",
     },
     {
-      icon: Heart,
-      title: "सामाजिक कल्याण",
-      subtitle: "EWS सहायता और सामुदायिक उत्थान",
+      icon: Shield,
+      title: "अधिकार और वकालत",
+      subtitle: "दमनकारी नीतियों के खिलाफ खड़े होना",
       description:
-        "आर्थिक रूप से कमज़ोर वर्गों को वित्तीय सहायता, कानूनी मार्गदर्शन, स्वास्थ्य सेवा और EWS प्रमाणपत्र सहायता प्रदान करना।",
+        "अनुचित यूजीसी नियमों और आरक्षण प्रणाली जैसी दमनकारी सरकारी नीतियों के खिलाफ जागरूकता बढ़ाने और लड़ने के लिए बैठकों और अभियानों का आयोजन करना।",
       color: "from-gold/5 to-navy/5",
       iconBg: "bg-gold/10",
     },
@@ -132,6 +132,11 @@ export default function PillarsSection({ lang }: PillarsSectionProps) {
                 {/* Gold accent top line */}
                 <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" aria-hidden="true" />
 
+                {/* Card number watermark */}
+                <span className="absolute -bottom-4 -right-4 font-cinzel text-[8rem] font-black text-charcoal/5 dark:text-white/5 select-none pointer-events-none z-0" aria-hidden="true">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+
                 <div className="relative z-10">
                   {/* Icon */}
                   <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${pillar.iconBg} mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -155,11 +160,6 @@ export default function PillarsSection({ lang }: PillarsSectionProps) {
                   <p className="font-inter text-charcoal/65 dark:text-white/60 text-sm leading-relaxed">
                     {pillar.description}
                   </p>
-
-                  {/* Card number watermark */}
-                  <span className="absolute bottom-4 right-6 font-cinzel text-7xl font-black text-charcoal/4 dark:text-white/4 select-none pointer-events-none" aria-hidden="true">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
                 </div>
               </div>
             );

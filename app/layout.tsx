@@ -19,13 +19,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Swarn Samaj | सवर्ण समाज — Strength in Unity, Progress through Service",
   description:
-    "Swarn Samaj is a dignified Indian community organization dedicated to honoring cultural heritage, empowering youth through education, and providing social welfare support through EWS programs.",
+    "Swarn Samaj is a dignified Indian community organization dedicated to honoring cultural heritage, empowering youth through education, and advocating for our community's rights against oppressive policies.",
   keywords: [
     "Swarn Samaj",
     "सवर्ण समाज",
     "Indian community",
     "cultural organization",
-    "EWS welfare",
+    "rights advocacy",
     "youth education",
     "heritage",
   ],

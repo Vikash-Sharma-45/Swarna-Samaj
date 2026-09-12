@@ -4,39 +4,39 @@ import { useEffect, useRef, useState } from "react";
 import { GraduationCap, Briefcase, Users, ArrowRight, CheckCircle2 } from "lucide-react";
 import Button from "@/components/ui/Button";
 
-interface EWSSectionProps {
+interface AdvocacySectionProps {
   lang: "en" | "hi";
 }
 
 const stats = {
   en: [
-    { icon: GraduationCap, value: 1250, suffix: "+", label: "Scholarships Issued", color: "text-gold" },
-    { icon: Briefcase, value: 480, suffix: "+", label: "Career Counseled", color: "text-gold" },
-    { icon: Users, value: 3200, suffix: "+", label: "Families Supported", color: "text-gold" },
+    { icon: Users, value: 50, suffix: "+", label: "Meetings Conducted", color: "text-gold" },
+    { icon: Briefcase, value: 15, suffix: "+", label: "Active Campaigns", color: "text-gold" },
+    { icon: GraduationCap, value: 12000, suffix: "+", label: "Voices United", color: "text-gold" },
   ],
   hi: [
-    { icon: GraduationCap, value: 1250, suffix: "+", label: "छात्रवृत्तियाँ जारी", color: "text-gold" },
-    { icon: Briefcase, value: 480, suffix: "+", label: "करियर परामर्श", color: "text-gold" },
-    { icon: Users, value: 3200, suffix: "+", label: "परिवारों को सहायता", color: "text-gold" },
+    { icon: Users, value: 50, suffix: "+", label: "बैठकें आयोजित", color: "text-gold" },
+    { icon: Briefcase, value: 15, suffix: "+", label: "सक्रिय अभियान", color: "text-gold" },
+    { icon: GraduationCap, value: 12000, suffix: "+", label: "एकजुट आवाजें", color: "text-gold" },
   ],
 };
 
 const programs = {
   en: [
-    "EWS Certificate Guidance & Documentation",
-    "Merit-based Scholarship Programs",
-    "UPSC / State PCS Exam Coaching",
-    "Legal Aid & Rights Awareness Camps",
-    "Widow & Senior Citizen Support Fund",
-    "Transparent Online Aid Application Portal",
+    "Fighting Unfair UGC Regulations",
+    "Campaigns Against Oppressive Reservation Policies",
+    "Community Advocacy & Rights Awareness",
+    "Strategic Planning Meetings",
+    "Legal Challenges & Petitions",
+    "Youth Mobilization Initiatives",
   ],
   hi: [
-    "EWS प्रमाणपत्र मार्गदर्शन और दस्तावेज़ीकरण",
-    "मेरिट आधारित छात्रवृत्ति कार्यक्रम",
-    "UPSC / राज्य PCS परीक्षा कोचिंग",
-    "कानूनी सहायता और अधिकार जागरूकता शिविर",
-    "विधवा एवं वरिष्ठ नागरिक सहायता कोष",
-    "पारदर्शी ऑनलाइन सहायता आवेदन पोर्टल",
+    "अनुचित यूजीसी नियमों के खिलाफ संघर्ष",
+    "दमनकारी आरक्षण नीतियों के खिलाफ अभियान",
+    "सामुदायिक वकालत और अधिकार जागरूकता",
+    "रणनीतिक योजना बैठकें",
+    "कानूनी चुनौतियां और याचिकाएं",
+    "युवा लामबंदी पहल",
   ],
 };
 
@@ -79,15 +79,15 @@ function AnimatedCounter({ target, suffix }: { target: number; suffix: string })
   );
 }
 
-export default function EWSPortalSection({ lang }: EWSSectionProps) {
+export default function AdvocacySection({ lang }: AdvocacySectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const statData = stats[lang];
   const programData = programs[lang];
 
   return (
     <section
-      id="ews"
-      aria-label="EWS and Welfare Portal"
+      id="meetings"
+      aria-label="Advocacy and Meetings"
       className="py-20 lg:py-28 bg-navy relative overflow-hidden"
     >
       {/* Background patterns */}
@@ -103,10 +103,10 @@ export default function EWSPortalSection({ lang }: EWSSectionProps) {
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="font-inter text-gold text-xs tracking-[0.3em] uppercase mb-3 font-semibold">
-            {lang === "en" ? "Support & Upliftment" : "सहायता और उत्थान"}
+            {lang === "en" ? "Advocacy & Action" : "वकालत और कार्य"}
           </p>
           <h2 className="font-cinzel font-bold text-white mb-4" style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)" }}>
-            {lang === "en" ? "EWS & Welfare Portal" : "EWS और कल्याण पोर्टल"}
+            {lang === "en" ? "Advocacy & Meetings" : "वकालत और बैठकें"}
           </h2>
           <div className="gold-divider w-24 mx-auto rounded-full" />
         </div>
@@ -162,32 +162,32 @@ export default function EWSPortalSection({ lang }: EWSSectionProps) {
           <div className="glass-dark rounded-2xl p-8 border border-gold/20">
             <div className="mb-2">
               <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-inter font-semibold rounded-full tracking-wide uppercase mb-4">
-                {lang === "en" ? "Free Assistance" : "निःशुल्क सहायता"}
+                {lang === "en" ? "Take Responsibility" : "जिम्मेदारी लें"}
               </span>
             </div>
             <h3 className="font-cinzel font-bold text-white text-2xl mb-3">
-              {lang === "en" ? "Need EWS Guidance?" : "EWS मार्गदर्शन चाहिए?"}
+              {lang === "en" ? "Join the Next Meeting" : "अगली बैठक में शामिल हों"}
             </h3>
             <p className="font-inter text-white/60 text-sm leading-relaxed mb-6">
               {lang === "en"
-                ? "Our expert team helps eligible members obtain EWS certificates, apply for government schemes, and access scholarships — completely free of charge."
-                : "हमारी विशेषज्ञ टीम पात्र सदस्यों को EWS प्रमाणपत्र प्राप्त करने, सरकारी योजनाओं के लिए आवेदन करने और छात्रवृत्ति प्राप्त करने में पूरी तरह निःशुल्क मदद करती है।"}
+                ? "We are actively organizing meetings to discuss our rights, challenge unfair laws, and strategize for the future of our community. Your voice matters."
+                : "हम अपने अधिकारों पर चर्चा करने, अनुचित कानूनों को चुनौती देने और अपने समुदाय के भविष्य के लिए रणनीति बनाने के लिए सक्रिय रूप से बैठकों का आयोजन कर रहे हैं। आपकी आवाज़ मायने रखती है।"}
             </p>
             <Button
               href="#contact"
               size="lg"
               className="w-full sm:w-auto justify-center"
               onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
-              aria-label="Apply for EWS guidance"
+              aria-label="Join our advocacy meetings"
             >
-              {lang === "en" ? "Apply for EWS Guidance" : "EWS मार्गदर्शन के लिए आवेदन करें"}
+              {lang === "en" ? "Register for Meeting" : "बैठक के लिए पंजीकरण करें"}
               <ArrowRight size={18} aria-hidden="true" />
             </Button>
 
             {/* Trust note */}
             <p className="font-inter text-white/40 text-xs mt-4 flex items-center gap-1.5">
               <CheckCircle2 size={12} aria-hidden="true" />
-              {lang === "en" ? "100% transparent & confidential process" : "100% पारदर्शी और गोपनीय प्रक्रिया"}
+              {lang === "en" ? "United we stand strong" : "हम एकजुट होकर मजबूत हैं"}
             </p>
           </div>
         </div>

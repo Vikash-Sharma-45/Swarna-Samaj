@@ -15,7 +15,7 @@ interface NavbarProps {
 const navLinks = [
   { en: "About", hi: "परिचय", href: "#about" },
   { en: "Youth Hub", hi: "युवा केंद्र", href: "#youth" },
-  { en: "EWS Portal", hi: "EWS पोर्टल", href: "#ews" },
+  { en: "Meetings", hi: "बैठकें", href: "#meetings" },
   { en: "Events", hi: "कार्यक्रम", href: "#events" },
   { en: "Contact", hi: "संपर्क", href: "#contact" },
 ];

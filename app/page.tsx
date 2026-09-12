@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PillarsSection from "@/components/PillarsSection";
-import EWSPortalSection from "@/components/EWSPortalSection";
+import AdvocacySection from "@/components/AdvocacySection";
 import MemberDirectorySection from "@/components/MemberDirectorySection";
 import MottoSection from "@/components/MottoSection";
 import Footer from "@/components/Footer";
@@ -52,7 +52,7 @@ export default function Home() {
       <main id="main-content">
         <HeroSection lang={lang} />
         <PillarsSection lang={lang} />
-        <EWSPortalSection lang={lang} />
+        <AdvocacySection lang={lang} />
         <MemberDirectorySection lang={lang} />
         <MottoSection lang={lang} />
       </main>
