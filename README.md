@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Swarna Samaj (सवर्ण समाज)
 
-## Getting Started
+Swarna Samaj is a dedicated web platform built to unite the community, take responsibility for our shared future, and organize meetings to advocate against oppressive government policies like unfair UGC regulations and the reservation system.
 
-First, run the development server:
+## 🌟 Key Features
+
+- **Bilingual Support:** Full support for both English and Hindi languages to ensure accessibility for all community members.
+- **Dark Mode Support:** Seamless transition between light and dark themes.
+- **Responsive Design:** A fully responsive interface optimized for all devices, from mobile phones to desktop screens.
+- **Advocacy & Action Portal:** Information on ongoing campaigns, meetings, and initiatives to protect community rights.
+- **Member Directory:** A dedicated hub to explore community members and youth initiatives.
+
+## 🛠️ Technology Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Library:** [React](https://reactjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Language:** TypeScript
+
+## 🚀 Getting Started
+
+Follow these instructions to set up the project locally on your machine.
+
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vikash-Sharma-45/Swarna-Samaj.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd swarna-samaj
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Development Server
+
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Community Guidelines
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Swarna Samaj stands for strength in unity and progress through service. We encourage members to engage respectfully and participate actively in community meetings and advocacy campaigns. 
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© Swarna Samaj. All rights reserved. This project is intended for informational and organizational purposes within the community.
